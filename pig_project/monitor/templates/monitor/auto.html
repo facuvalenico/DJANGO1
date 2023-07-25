@@ -1,0 +1,87 @@
+{% extends 'monitor/base.html' %}
+
+{% block content %} 
+
+{% comment %}  
+{% for i in actualizacion %} 
+<img width="50px" height="300px" id="dibu" src="{{i.image.url}}"> 
+{{i.title}}
+<br>
+{{i.description}}
+{% endfor %} {% endcomment %}
+
+<h1 id="tituloPagina">Realmente, ¿sabés cuánto vale tu dinero?</h1>
+<p class="subTitulo"><i>"Nuestra calculadora de poder adquisitivo, te lo dirá con precisión. Ingresá un monto en pesos y obtené la cantidad (o la parte) de un 0 kilómetro* equivalente."</i></p> 
+
+{% load static %}
+<img id="fotoIndex" src="{% static 'monitor/imagenes/fotoauto.png' %}">
+
+<p id="tituloCalcu">Calculadora de Poder Adquisitivo</p><br>
+
+<section>    
+    <aside id="o2">
+        <p id="cuidaEco">Cuidá tu economía.</p>
+        <p id="calcula">Calculá periódicamente el valor real de tus ingresos y activos monetarios:</p>
+        <div id="apartadoIconos">
+            <div id="apartadoIconos1">
+        <p class="pIcono">
+        <span class="icono"><i class="fa-solid fa-briefcase"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-piggy-bank"></i></span>
+        </p>
+        <p>
+        <span class="tilde"><i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;<span class="activo">Salario</span>&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="tilde"><i class="fa-regular fa-square-check"></i>&nbsp;</span><span class="activo">Ahorros</span></span>
+        </p>
+        </div>
+        <div id="apartadoIconos2">
+        <p class="pIcono">
+        <span class="icono"><i class="fa-solid fa-money-bill-trend-up"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-store"></i>&nbsp;
+        </p>
+        <p>
+        <span class="tilde"><i class="fa-regular fa-square-check">&nbsp;</i></span>&nbsp;<span class="activo">Inversiones</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="tilde"><i class="fa-regular fa-square-check"></i>&nbsp;</span><span class="activo">Facturación</span>
+        </p>
+    </div></div>
+</aside>
+
+    <article>
+        <div id="dibucalcu">
+            <img id="dibu" src="{% static 'monitor/imagenes/logo.png' %}"> 
+
+            <img id="panel" src="{% static 'monitor/imagenes/panel2.png' %}"> 
+
+        </div>
+
+        <div id="cuerpoCalcu">
+    
+        <div id="marco">
+            <h1 id="intro">Calculadora</h1>
+            <div id="calculadora">
+                {% for i in actualizacion %} 
+                <form id="input" oninput="x.value=parseInt(a.value)/{{i.valor3}}">
+                 {% endfor %}
+                    <br>
+                    <p>Ingresá el monto en pesos:</p><br>
+                    <input type="number" id="a"><br>
+                    <br>
+                    <h4 class="cbt">El monto equivale a:</h4>
+                    <h4 class="resultado"><output class="resultado" name="x" for="a"></output></h4>
+                    <h4 class="cbt">Vehículos*.</h4>
+                    <p><a href="{% url 'auto' %}" target="_parent">
+                    <img id="ac" src="{% static 'monitor/imagenes/On_Ac.png' %}"></a></p>             
+                </form>
+            </div>
+        </div>
+        </div>
+    </article>
+</section>
+
+<article id="concepto_canasta">
+    <p> *Volkswagen Polo Base 0Km precio publicado VW c/IVA, s/flete, s/patentamiento. Para más detalle visitar página web =>
+    <a href="https://www.volkswagen.com.ar/" target="_blank">
+        <img id="indec" src="{% static 'monitor/imagenes/vw16.png' %}">  
+    </a> </p> 
+    
+</article>
+
+{% endblock%}
+

@@ -1,0 +1,1187 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.065em;
+    word-spacing: 0.075em;
+    padding: 0%;
+    margin: 0;
+    width: 100%; 
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    width: 50%;
+}
+
+#a {
+    width: 80%;
+    margin-inline: 10%;
+    text-align: center;
+}
+
+.resultado{
+    margin-left: 5px;
+    max-width: 20px;
+}
+
+#paginaindec {
+    background-image: url(imagenes/INDEC_frente_1.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+/* 
+-------CODIGO para FOTOGRAMA-------
+header {
+    animation-name: fotograma;
+    animation-duration: 3s;
+    animation-timing-function:(0.1,0.1,0.1);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: black solid 1px;
+}
+@keyframes fotograma{
+    0% {background:linear-gradient(#666666,#DEDEDE,#9bd4fa)}
+    100% {background: linear-gradient(#DEDEDE,#9bd4fa,#666666)}
+} */
+
+@media screen and (max-width:600px) {
+
+header {
+        width: 100%;
+        background: linear-gradient(black 15%,#f4f4f4 40%,white 100%);
+        color: white;
+}
+    
+header a{
+    color:white;
+}
+nav{
+    margin-left: 1.5%;
+}
+nav span{
+    font-size:7px;
+    font-weight:lighter ;
+    width: 100%;
+    margin-right: 2.5%;
+}
+
+#divLogo {
+    margin-top: 5%;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    margin-inline: 20%;
+    justify-content: center;
+}
+
+#logo {
+    width: 15%;
+    height: 100%;
+}
+
+hr{
+    width: 10%;
+    height: 0%;
+    margin-top: 6.75%;
+    border: 1px solid #ffbf00 ;
+    filter: brightness(0.8)
+}
+
+#tituloPagina{
+    font-size: small;
+    margin-top: 8%;
+    text-align: center;
+}
+.subTitulo{
+    text-align: center;
+    color: #1c1c1c;
+    font-size: xx-small;
+    padding-inline: 20%;
+    margin-top: 6%;
+}
+
+#fotoIndex{
+    width: 100%;
+    margin-top: 10%;
+    border:0.25px solid #ffbf00;
+}
+
+}
+
+@media screen and (min-width:601px) and (max-width:1199px) {
+header {
+        width: 100%;
+        background: linear-gradient(black 15%,#f4f4f4 35%,white 100%);
+}
+    
+header a{
+    color:white;
+}
+nav{
+    margin-left: 1.5%;
+    padding-top: 1.5%;
+}
+nav span{
+    font-size: small;
+    font-weight:lighter ;
+    width: 100%;
+    margin-right: 2.5%;
+}
+
+#divLogo {
+    margin-top: 5%;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    margin-inline: 20%;
+    justify-content: center;
+}
+
+#logo {
+    width: 15%;
+    height: 100%;
+}
+
+hr{
+    width: 10%;
+    height: 0%;
+    margin-top: 6.75%;
+    border: 1px solid #ffbf00 ;
+    filter: brightness(0.8)
+}
+
+#tituloPagina{
+    font-size: x-large;
+    margin-top: 6%;
+    text-align: center;
+}
+.subTitulo{
+    text-align: center;
+    color: #1c1c1c;
+    font-size: medium;
+    padding-inline: 20%;
+    margin-top: 6%;
+}
+
+#fotoIndex{
+    width: 70%;
+    margin-top: 10%;
+    border:0.25px solid #ffbf00;
+    margin-inline: 15%;
+}
+    
+
+}
+
+@media screen and (min-width:1200px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(black,#f4f4f4,whitesmoke,white);
+        margin-bottom: 1.75%;
+    }
+    
+    #divLogo {
+        margin-top: 1.75%;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        margin-right: 30%;
+    }
+    
+    #logo {
+        width: 15%;
+        height: 100%;
+    }
+    
+    hr{
+        width: 10%;
+        height: 0%;
+        margin-top: 6.75%;
+        border: 1px solid #ffbf00 ;
+        filter: brightness(0.8)
+    }
+    
+
+    nav{
+    align-self:center;
+    text-align: left;
+    width: 100%;
+    padding: 2px;
+    opacity: 1;
+    margin-bottom: 1.5%;
+    margin-left: 1.5%;
+    padding-right: 0%;
+    margin-top: -1.25%;
+}
+
+    nav a{
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    opacity: 1;
+    margin-right: 5%;
+    }
+
+}
+
+
+#textoFoto{
+    width: 30%;
+    height:min-content;
+    margin-right: 50%;
+    margin-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: x-small;
+}
+
+#fotoConIntro p,ul{
+    background-color: transparent;
+    color:black;
+}
+
+@media screen and (max-width:600px) {
+section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;   
+    margin-inline: 10%;
+    border: 0px solid #763c28;
+    margin-top: 5%;
+}
+
+section article{
+    margin-inline: 0%;
+}
+
+#cuerpoCalcu{
+    display: flex;
+    background-image: linear-gradient(white 25%,skyblue 80%,#252850 100%);
+    flex-direction: row;
+    width: 100%;
+}
+
+#intro{
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 5px double #665D1E;
+    margin-bottom: 1%;
+    font-size: small;
+}
+
+#dibucalcu{
+    height: 100%;
+    width: 100%;
+    border-bottom: 1.5px solid #efb810;
+    margin-bottom: 2.5%;
+    margin-top: 1%;
+}
+
+#dibu{
+    width: 22.5%;
+    margin-right: 4%;
+    margin-left: 0%;
+    padding-top: 0%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+
+#panel{
+    width: 50%;
+    height: 100%;
+    border: black ridge 5px;
+    margin-right: 0%;
+    margin-left: 10%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    
+}
+#marco{
+    border: 1.5px solid #cd7f32;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    padding-bottom: 5%;
+    margin-bottom: 0%;
+    border-radius: 1.25%;
+}
+
+#calculadora p{
+    font-size: small;
+    color:black;
+    padding:2px;
+    font-weight: bold;
+    }
+
+#calculadora h4{
+    font-size: small;
+    color:black;
+    padding:2px;
+    font-weight: bold;
+}
+
+.cbt{
+    color:black;
+    border-width: 10px;
+    border-color: white;
+    padding:2px;
+    text-align: center;
+}
+
+#ac {
+    margin-top: 5%;
+    width: 10%;
+    border-radius: 20%;
+    border: 0.5px solid #1c1c1c;
+}
+
+}
+
+@media screen and (min-width:601px) and (max-width:1199px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 80%;   
+        margin-inline: 10%;
+        border: 0px solid #763c28;
+        margin-top: 5%;
+    }
+    
+    section article{
+        margin-inline: 0%;
+    }
+    
+    #cuerpoCalcu{
+        display: flex;
+        background-image: linear-gradient(white 25%,skyblue 80%,#252850 100%);
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    #intro{
+        background-color: white;
+        text-align: center;
+        font-weight: bold;
+        border-bottom: 5px double #665D1E;
+        margin-bottom: 1%;
+        font-size: x-large;
+    }
+    
+    #dibucalcu{
+        height: 100%;
+        width: 100%;
+        border-bottom: 1.5px solid #efb810;
+        margin-bottom: 2.5%;
+        margin-top: 1%;
+    }
+    
+    #dibu{
+        width: 22.5%;
+        margin-right: 4%;
+        margin-left: 0%;
+        padding-top: 0%;
+        padding-bottom: 1%;
+        padding-left: 5%;
+        padding-right: 0%;
+        margin-top: 0%;
+        margin-bottom: 1%;
+    }
+    
+    
+    #panel{
+        width: 50%;
+        height: 100%;
+        border: black ridge 5px;
+        margin-right: 0%;
+        margin-left: 10%;
+        margin-top: 0%;
+        margin-bottom: 5%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        
+    }
+    #marco{
+        border: 1.5px solid #cd7f32;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        padding-bottom: 5%;
+        margin-bottom: 0%;
+        border-radius: 1.25%;
+    }
+    
+    #calculadora p{
+        font-size: large;
+        color:black;
+        padding:2px;
+        font-weight: bold;
+        }
+    
+    #calculadora h4{
+        font-size: large;
+        color:black;
+        padding:2px;
+        font-weight: bold;
+    }
+    
+    .cbt{
+        color:black;
+        border-width: 10px;
+        border-color: white;
+        padding:2px;
+        text-align: center;
+    }
+    
+    #ac {
+        margin-top: 5%;
+        width: 10%;
+        border-radius: 20%;
+        border: 0.5px solid #1c1c1c;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    #tituloPagina{
+        margin-top: 3.75%;
+        margin-bottom: 1.5%;
+        text-align: center;
+    }
+    
+    .subTitulo{
+        text-align: center;
+        color: #1c1c1c;
+        font-size: large;
+        padding-inline: 30%;
+        margin-top: 4%;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        width: 65%;   
+        margin-inline: 17.5%;
+        border: 0px solid #763c28;
+        margin-top: 5%;
+               
+    }
+
+    section article #intro{
+        background-color: white;
+        text-align: center;
+        align-self: flex-end;
+        color: black;
+        font-weight: bold;
+        border-bottom: 5px double #665D1E;
+        margin-bottom: 1%;
+    
+    }
+    
+    #fotoIndex{
+        width: 65%;
+        margin-inline: 17.5%;
+        margin-top: 5%;
+        border:0.25px solid #ffbf00;
+    }
+    
+    section article{
+        align-self: center;
+        width: 70%;
+        order:2;
+        background-color: whitesmoke;
+        border: 1.5px solid #cd7f32;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        padding-top: 2%;
+        padding-inline: 1%;
+        padding-bottom: 1%;
+        margin-right: 10%;
+    }
+
+    #dibucalcu{
+        height: 100%;
+        width: 100%;
+        border-bottom: 1.5px solid #efb810;
+        margin-bottom: 2.5%;
+        margin-top: 1%;
+    }
+    
+    #dibu{
+        width: 22.5%;
+        margin-right: 4%;
+        margin-left: 0%;
+        padding-top: 0%;
+        padding-bottom: 1%;
+        padding-left: 5%;
+        padding-right: 0%;
+        margin-top: 0%;
+        margin-bottom: 1%;
+    }
+    
+    
+    #panel{
+        width: 50%;
+        height: 100%;
+        border: black ridge 5px;
+        margin-right: 0%;
+        margin-left: 10%;
+        margin-top: 0%;
+        margin-bottom: 5%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        
+    }
+    #marco{
+        border: 1.5px solid #cd7f32;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        padding-bottom: 5%;
+        margin-bottom: 0%;
+        border-radius: 1.25%;
+    }
+    
+    #calculadora p{
+    font-size: large;
+    color:black;
+    padding:2px;
+    font-weight: bold;
+    
+    }
+    
+    
+    .cbt{
+        color:black;
+        border-width: 10px;
+        border-color: white;
+        padding:2px;
+        text-align: center;
+    }
+    
+    #ac {
+        margin-top: 5%;
+        width: 10%;
+        border-radius: 20%;
+        border: 0.5px solid #1c1c1c;
+    }
+
+}
+
+#input{
+    text-align: center;
+}
+
+
+@media screen and (max-width:600px) {
+        #concepto_canasta{
+    
+            color: #454546;
+            font-weight: bold;
+            font-size: 7.75px;
+            font-style: italic;
+            text-align: left;
+            padding-inline: 7.5%;
+            margin-left: 1%;
+            margin-top: 15%;
+            margin-bottom: 10%;
+            
+        }
+}
+
+
+@media screen and (min-width:601px) and (max-width:1199px) {
+
+    #concepto_canasta{
+    
+        color: #454546;
+        font-weight: bold;
+        font-size: small;
+        font-style: italic;
+        text-align: left;
+        padding-inline: 7.5%;
+        margin-left: 1%;
+        margin-top: 15%;
+        margin-bottom: 10%;
+        
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+        #concepto_canasta{
+    
+            color: #454546;
+            font-weight: bold;
+            font-size: x-small;
+            font-style: italic;
+            text-align: left;
+            padding-inline: 5%;
+            margin-left: 1%;
+            margin-top: 7.5%;
+            margin-bottom: 2%;
+            
+        }
+}
+
+@media screen and (max-width:600px) {
+section article{
+    align-self: center;
+    width: 72%;
+    height: 100%;
+    background-color: #f4f4f4;
+    border: 1.5px solid #cd7f32;
+    border-radius: 5%;
+    padding-top: 2%;
+    padding-inline: 1%;
+    padding-bottom: 5%;
+
+}    
+}
+@media screen and (min-width:601px) and (max-width:1199px) {
+    section article{
+        align-self: center;
+        width: 60%;
+        height: 100%;
+        background-color: white;
+        border: 1.5px solid #cd7f32;
+        border-radius: 5%;
+        padding-top: 2%;
+        padding-inline: 5%;
+        padding-bottom: 2.5%;
+    }     
+}
+
+
+@media screen and (max-width:600px) {
+.carita h1, h5{
+    text-align: left;
+}
+}  
+
+
+.carita h1, h5{
+    text-align: left;
+    margin-left: 1%;
+    
+}    
+   
+
+section article h4{
+    
+    font-weight: bold;
+       
+}
+
+@media screen and (max-width:600px) {
+section aside{
+    width: 100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    align-self: center;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    }
+    #tituloCalcu{
+        text-align: center;
+        margin-top: 15%;
+        font-size: small;
+        font-weight: bold;
+    }
+    #cuidaEco {
+        font-size: x-small;
+        font-weight: bold;
+    }
+    #calcula {
+        font-size: x-small;
+        font-weight:lighter;
+        margin-top: 2.5%;
+    }
+    #apartadoIconos{
+        margin-top: 5%;
+        text-align: center;
+        margin-bottom: 5%;
+    } 
+    #apartadoIconos1{
+        margin-right: 5%;
+    } 
+  
+    .icono {
+        color: #efb810;
+        font-size: 112.5%;
+    }
+    .pIcono {
+        margin-top: 2.5%;
+    }
+    .tilde{
+        font-size: 50%;
+        color: black;
+    }
+    .activo{
+        font-size: xx-small;
+        color: black;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:1199px) {
+    section aside{
+        width: 100%;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position: center;
+        align-self: center;
+        font-size: larger;
+        font-weight: bolder;
+        margin-top: 3%;
+        margin-bottom: 10%;
+        }
+        #tituloCalcu{
+            text-align: center;
+            margin-top: 15%;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        #cuidaEco {
+            font-size: x-large;
+            font-weight: bold;
+            
+        }
+        #calcula {
+            font-size: medium;
+            font-weight:lighter;
+            margin-top: 2.5%;
+        }
+        #apartadoIconos{
+            margin-top: 5%;
+            text-align: center;
+            margin-bottom: 3%;
+        } 
+        #apartadoIconos1{
+            margin-right: 45%;
+            margin-bottom: -10.75%;
+        } 
+        #apartadoIconos2{
+            margin-left: 35%;
+        }       
+        .icono {
+            color: #efb810;
+            font-size: 175%;
+        }
+        .pIcono {
+            margin-top: 2.5%;
+        }
+        .tilde{
+            font-size: 50%;
+            color: black;
+        }
+        .activo{
+            font-size: small;
+            color: black;
+        }        
+}
+
+@media screen and (min-width:1200px) {
+
+#o2{
+    width: 100%;
+    order:1;
+    font-weight: bolder;
+    font-size: medium;
+    padding-right: 10%;
+    margin-left: 5%;
+}
+
+#tituloCalcu{
+    text-align: center;
+    margin-top: 7.5%;
+    font-size:xx-large;
+    font-weight: bold;
+}
+#cuidaEco {
+    font-size: x-large;
+    font-weight: bold;
+}
+#calcula {
+    margin-top: 3%;
+    font-size: medium;
+    font-weight:lighter;
+}
+.icono {
+    color: #efb810;
+    font-size: 225%;
+}
+.pIcono {
+    margin-top: 10%;
+    margin-left: 9%;
+}
+.tilde{
+    font-size: 90%;
+    color: black;
+}
+.activo{
+    font-size: small;
+    color: black;
+}
+}
+
+
+@media screen and (min-width:1200px) {
+
+    .remarcar{
+        font-size: 1.25rem;
+        margin-top: 2%;
+    }
+
+
+    .FontIconosIntro{
+        color: #665D1E;
+        width: 10%;
+    }
+
+    #ahorro{
+        height: 100px;
+        width: 100px;
+        color: black;
+    }
+
+}
+
+
+.casa{
+    background-image: url(imagenes/borba3.jpg);
+    border: 1px solid green;
+    
+}
+
+@media screen and (max-width:600px) {
+    #f{
+        padding-bottom: 60%;
+        color: black;
+    }
+    }
+    
+    @media screen and (min-width:601px) and (max-width:1199px) {
+        #f{
+            padding-bottom: 60%;
+            color: black;
+        }
+        }
+    
+    @media screen and (min-width:1200px) {
+        #f{
+            padding-bottom: 400px;
+            color: black;
+        
+    }
+    }
+
+
+@media screen and (max-width:600px) {
+
+.imagen {
+    width: 100%;
+    height: 70%;
+    border: green solid 1px;
+}  
+}
+
+@media screen and (min-width:601px) and (max-width:1199px) {
+    .imagen {
+        width: 100%;
+        height: 70%;
+        border: green solid 1px;
+    }   
+  }
+
+@media screen and (min-width:1200px) {
+.imagen {
+    width: 100%;
+    height: 500px;
+    border: green solid 1px;
+  }  
+  }
+
+  
+
+@media screen and (max-width:600px) {
+.iframe {
+    width: 100%;
+    height: 300px;
+    order: green solid 2px;
+
+}   
+footer {
+   
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 1%;
+   
+}
+
+footer #footerF{
+    padding-top: 0.75%;
+    padding-bottom: 1.5%;
+    margin-bottom: 1%;
+    background:linear-gradient(white,whitesmoke,#f4f4f4,#f4f4f4);
+    text-align: center;
+    font-size: xx-small;
+    font-weight: bolder;
+    color: #454546;
+    border-top: 0.25px solid #c8c8c8;
+    
+}
+
+
+footer #footerF p span a{
+    color: black;
+
+}
+
+#indec{
+    width: 2.5%;
+}
+
+.FontIconosFooter{
+    color: rgb(0, 68, 255);
+    
+    font-size: 150%;
+    
+}
+}
+
+@media screen and (min-width:601px) and (max-width:1199px) {
+    .iframe {
+        width: 100%;
+        height: 300px;
+        order: green solid 2px;
+}
+footer {
+   
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 1%;
+   
+}
+
+footer #footerF{
+    padding-top: 0.75%;
+    padding-bottom: 1.5%;
+    margin-bottom: 1%;
+    background:linear-gradient(white,whitesmoke,#f4f4f4,#f4f4f4);
+    text-align: center;
+    font-size: small ;
+    font-weight: bolder;
+    color: #454546;
+    border-top: 0.25px solid #c8c8c8;
+    
+}
+
+
+footer #footerF p span a{
+    color: black;
+
+}
+
+.FontIconosFooter{
+    color: rgb(0, 68, 255);
+    
+    font-size: 150%;
+    
+}
+
+}
+
+@media screen and (max-width:600px) {
+    #indecindec {
+    width: 100%;
+    height: 100%;
+    margin-top: 30%;
+    
+        
+    }
+    
+    .indecdic {
+     height: 70%;
+     width: 100%;
+     text-align: center;
+    }
+    
+    
+    
+    #yt {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 20%;
+    }
+    
+    #gm {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 20%;
+    }
+    
+    }
+
+
+
+@media screen and (min-width:601px) and (max-width:1199px) {
+    #indecindec {
+        width: 100%;
+        height: 100%;
+        margin-top: 30%;
+        
+            
+        }
+        
+        .indecdic {
+         height: 70%;
+         width: 100%;
+         text-align: center;
+        }
+        
+        
+        
+        #yt {
+        width: 100%;
+        background-color: transparent;
+        margin-top: 20%;
+        }
+        
+        #gm {
+        width: 100%;
+        background-color: transparent;
+        margin-top: 20%;
+        }
+        
+        }
+
+
+@media screen and (min-width:1200px) {
+
+.apartadoIndec {
+ margin-top: 7.5%;
+ margin-inline: auto;
+ width: 60%;
+ margin-inline: 20%; 
+ text-align: left;
+}
+
+#fotoIndec {
+    width: 100%;
+    text-align: left;
+   }
+
+}
+
+
+#a{
+    margin-right: 10%;
+}
+
+
+@media screen and (max-width:600px) {
+        
+    section article{
+        margin-inline: 0%;
+    }
+
+}
+
+@media screen and (min-width:1200px) { 
+    #teclado{
+        margin-inline: 5%;
+        width: 80%;
+    }
+    
+    .container{
+    
+        margin-top: 10%;
+        margin-bottom: 20%;
+      
+    }
+
+    .iframe {
+        width: 100%;
+        height: 400px;
+        
+    }
+    #cuerpoCalcu{
+        display: flex;
+        background-image: linear-gradient(white 25%,skyblue 80%,#252850 100%);
+        flex-direction: row;
+        width: 100%;
+        margin-inline: 5%;
+    }
+    
+    #footerF {
+        padding-top: 0.75%;
+        background:linear-gradient(white,whitesmoke,#f4f4f4,#f4f4f4);
+        text-align: center;
+        font-size: x-small ;
+        font-weight: bolder;
+        border-top: 0.25px solid #c8c8c8;
+        padding-bottom: 1%;
+    }
+        
+    footer #footerF p span a{
+        color: black;
+        text-align: center;
+        
+    }
+    
+    .FontIconosFooter{
+        color: rgb(0, 68, 255);
+        font-size: 150%;
+        margin-top: 0.25%;
+    }
+    
+    }

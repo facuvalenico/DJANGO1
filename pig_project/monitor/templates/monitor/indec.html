@@ -1,0 +1,33 @@
+{% extends 'monitor/base.html' %}
+
+{% block content%}
+
+<h1 id="tituloPagina">Instituto Nacional de Estadística y Censos</h1>
+
+{% load static %}
+<article class="apartadoIndec">
+    <h2>&nbsp;Foto Frente Edilicio, Microcentro Porteño.</h2>
+    <h5>El 25 de enero de 1968, mediante la Ley n.º 17.622, se creó el Instituto Nacional de Estadística y Censos.</h5>
+    <br>
+    <img id="fotoIndec" src="{% static 'monitor/imagenes/indecoriginal.jpg' %}">
+</article>
+
+
+<article class="apartadoIndec">
+    <h2>&nbsp;Video Institucional.</h2>
+    <h5>En este video encontrarás la presentación oficial del Instituto Nacional de Estadística y Censos.</h5>
+    <br>
+    <iframe src="https://www.youtube.com/embed/MuKwZ1ggBP0" class="iframe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</article>
+        
+<article class="apartadoIndec">
+    <h2>&nbsp;Mapa Google.</h2>
+    <h5>¿Interesado en realizar una visita a la biblioteca del INDEC? Mirá este mapa con su ubicación.</h5>
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.4695872848248!2d-58.375362409000836!3d-34.61031336752859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad3842ec51b%3A0xc74308c62117a6c1!2sInstituto%20Nacional%20de%20Estad%C3%ADstica%20y%20Censos%20-%20INDEC%20Argentina!5e0!3m2!1ses-419!2sar!4v1634861292953!5m2!1ses-419!2sar" class="iframe" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</article>
+
+<br>
+<br>
+</div>
+{% endblock%}
